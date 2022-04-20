@@ -1,0 +1,5 @@
+div{width: 250px; height: 500px; padding: 10px; margin: 15px; float : left; text-align: center;}
+#div1{border : 1px solid red;}
+#div2{border : 1px solid green;}
+#div3{border : 1px solid blue;}
+#focus{border : 1px solid yellow;}
