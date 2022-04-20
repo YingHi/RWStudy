@@ -16,17 +16,14 @@
   </head>
   <body>
     <h4>하노이의 탑</h4>
-    <Button id="btn4" style="display: block;">초기화</Button>
+    <Button id="btn" style="display: block;">초기화</Button>
     <div id="div1">
-      <Button id="btn1">선택</Button>
       <p id="p1"></p>
     </div>
     <div id="div2">
-      <Button id="btn2">선택</Button>
       <p id="p2"></p>
     </div>
     <div id="div3">
-      <Button id="btn3">선택</Button>
       <p id="p3"></p>
     </div>
     <script>
@@ -36,15 +33,12 @@
       var div1 = document.getElementById("div1");
       var div2 = document.getElementById("div2");
       var div3 = document.getElementById("div3");
-      var divc1, divc2, divc3, diva1, diva2, diva3;
-      var btn1 = document.getElementById("btn1");
-      btn1.addEventListener('click',focus1)
-      var btn2 = document.getElementById("btn2");
-      btn2.addEventListener('click',focus2)
-      var btn3 = document.getElementById("btn3");
-      btn3.addEventListener('click',focus3)
-      var btn4 = document.getElementById("btn4");
-      btn4.addEventListener('click',Re)
+      var diva1, diva2, diva3;
+      div1.addEventListener('click',focus1)
+      div2.addEventListener('click',focus2)
+      div3.addEventListener('click',focus3)
+      var btn = document.getElementById("btn");
+      btn.addEventListener('click',Re)
       var focused = 0;
 
       function Re(){
@@ -134,13 +128,13 @@
         p3.innerHTML = diva3.join("<br>")
 
         if(diva1[0] == null || undefined){
-          p1.innerHTML = "second"
+          p1.innerHTML = "first"
         }
         if(diva2[0] == null || undefined){
           p2.innerHTML = "second"
         }
         if(diva3[0] == null || undefined){
-          p3.innerHTML = "second"
+          p3.innerHTML = "third"
         }
 
         }
@@ -148,4 +142,4 @@
       window.onload = Re;
     </script>
   </body>
-</html>
+</html> 
